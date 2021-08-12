@@ -4,9 +4,9 @@
 
 - Cadastro de usuário
 
-  [ ] Não é permitido cadastrar mais de um usuario com o mesmo nome;
+  [ x ] Não é permitido cadastrar mais de um usuario com o mesmo nome;
 
-  [ ] Não é permitido cadastrar usuário sem e-mail.
+  [ x ] Não é permitido cadastrar usuário sem e-mail.
 
 
 - Cadastro de Tags
