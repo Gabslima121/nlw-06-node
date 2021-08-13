@@ -1,16 +1,16 @@
-import { Request, Response } from 'express';
-import { CreateTagService } from '../services/CreateTagService'
+import { Request, Response } from "express";
+import { CreateTagService } from "../services/CreateTagService";
 
 class CreateTagController {
-  async handle(req: Request, res: Response) {
-    const { name } = req.body
-    
-    const createTagService = new CreateTagService()
+  async handle(request: Request, response: Response) {
+    const { name } = request.body;
 
-    const tag = await createTagService.execute(name)
+    const createTagService = new CreateTagService();
 
-    return res.json(tag)
+    const tag = await createTagService.execute(name);
+
+    return response.json(tag);
   }
 }
 
-export { CreateTagController }
+export { CreateTagController };
